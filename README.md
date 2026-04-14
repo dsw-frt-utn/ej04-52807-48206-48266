@@ -1,2 +1,7 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/39DJV9ho)
+# Desarrollo de Software
+## EJ04
+### Integrantes
+- 52807, Velazquez Leal Ivan, Ivan.VelazquezLeal@alu.frt.utn.edu.ar
+- 48206, Juarez Yessica del Carmen, yessi48206@gmail.com
+- 48266, Leiva Jessica Daiana, dayleiva92@gmail.com
 
