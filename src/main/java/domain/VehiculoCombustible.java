@@ -12,6 +12,14 @@ public class VehiculoCombustible extends Vehiculo {
         this.kilometrosPorLitro = kilometrosPorLitro;
         this.litrosExtra = litrosExtra;
     }
+
+    public VehiculoCombustible(String patente, String sucursal, double capacidad, int anio, double kmLitro, double litrosExtra) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public VehiculoCombustible(String patente, String sucursal, double capacidad, int anio) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
      public double getKilometrosPorLitro() {
         return kilometrosPorLitro;
