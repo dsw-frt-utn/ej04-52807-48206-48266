@@ -55,4 +55,12 @@ public class Persistencia {
         inicializarSucursales();
         inicializarVehiculos();
     }
+
+    public static Sucursal getSucursal(String codigoSucursal) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public static void agregarVehiculo(Vehiculo vehiculo) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
