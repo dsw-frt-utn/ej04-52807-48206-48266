@@ -46,8 +46,7 @@ public class MenuPrincipal extends JFrame {
         });
 
         btnAgregar.addActionListener(e -> {
-            JOptionPane.showMessageDialog(this,
-                    "Se habilitará al integrar feature/alta-vehiculo");
+            new AltaVehiculoView().setVisible(true);
         });
 
         btnSalir.addActionListener(e -> System.exit(0));
