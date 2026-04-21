@@ -62,7 +62,7 @@
                           <Component id="txtAnio" min="-2" pref="76" max="-2" attributes="0"/>
                           <Component id="comboTipo" min="-2" max="-2" attributes="0"/>
                           <Component id="txtKmPorLitro" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtLitrosExtra" pref="93" max="32767" attributes="0"/>
+                          <Component id="txtLitrosExtra" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>

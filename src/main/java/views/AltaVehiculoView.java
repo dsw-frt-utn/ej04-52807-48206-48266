@@ -7,6 +7,8 @@ package views;
 
 import domain.Vehiculo;
 import domain.VehiculoCombustible;
+import data.Persistencia;
+import domain.Sucursal;
 
 /**
  *
@@ -207,34 +209,52 @@ public class AltaVehiculoView extends javax.swing.JFrame {
         // TODO add your handling code here:
     try {
         String patente = txtPatente.getText();
-        String sucursal = TxtSucursal.getText();
+        String codigoSucursal = TxtSucursal.getText();
         double capacidad = Double.parseDouble(TextCapacidad.getText());
         int anio = Integer.parseInt(txtAnio.getText());
-
-        String tipo = comboTipo.getSelectedItem().toString();
+        
+        Sucursal sucursal = Persistencia.getSucursal(codigoSucursal);
 
         Vehiculo vehiculo;
+
+        String tipo = comboTipo.getSelectedItem().toString();
 
         if(tipo.equals("COMBUSTIBLE")){
             double kmLitro = Double.parseDouble(txtKmPorLitro.getText());
             double litrosExtra = Double.parseDouble(txtLitrosExtra.getText());
 
             vehiculo = new VehiculoCombustible(
-                patente, sucursal, capacidad, anio, kmLitro, litrosExtra
+                patente,
+                "Sin Marca",
+                "Sin Modelo",
+                anio,
+                capacidad,
+                sucursal,
+                kmLitro,
+                litrosExtra
             );
         } else {
             vehiculo = new VehiculoCombustible(
-                patente, sucursal, capacidad, anio);
+            patente,
+            "Sin Marca",
+            "Sin Modelo",
+            anio,
+            capacidad,
+            sucursal,
+            16,
+            2
+           );
         }
 
-        Sistema sistema = new Sistema();
-sistema.agregarVehiculo(vehiculo);
+       Persistencia.agregarVehiculo(vehiculo);
 
-        javax.swing.JOptionPane.showMessageDialog(this, "Vehículo agregado");
+    javax.swing.JOptionPane.showMessageDialog(this, "Vehículo agregado");
 
-    } catch(Exception e){
-        javax.swing.JOptionPane.showMessageDialog(this, "Error en los datos");
-    }
+} catch(Exception e){
+
+    javax.swing.JOptionPane.showMessageDialog(this, "Error en datos");
+
+}
 
     }//GEN-LAST:event_btnGuardarActionPerformed
 
